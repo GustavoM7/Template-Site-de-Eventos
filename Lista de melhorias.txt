@@ -1,0 +1,6 @@
+#Lista de Melhorias
+
+- Marcação de página atual
+- Animações da página 'Programação'
+- Otimização backend
+- + Funcionalidades
