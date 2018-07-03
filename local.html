@@ -136,10 +136,16 @@
 			color: rgb(235, 132, 47);
 		}
 		
-		nav#menu li#program:hover {
-			background-color: black;
-			color: rgb(235, 132, 47);
-			animation: bounce 1s;
+		/*Configurando botão diferenciado para programação*/
+		nav#menu li#program {
+			background-color: rgb(0,33,69);
+			color: white;
+			position: relative;
+		}
+
+		/*Configurando botão de marcação local*/
+		nav#menu li#local {
+			border-bottom: 6px rgb(235, 132, 47) solid;
 		}
 		
 		@keyframes bounce {
@@ -373,7 +379,7 @@
 		<nav id="menu">
 			<ul>
 				<a href="home.html"><li>Home</li></a>
-				<a href="local.html"><li>Local</li></a>
+				<a href="local.html"><li id="local">Local</li></a>
 				<a href="khnum.html"><li>A khnum</li></a>
 				<a href="programacao.html"><li id="program" class="animated tada">Programação</li></a>
 			</ul>
