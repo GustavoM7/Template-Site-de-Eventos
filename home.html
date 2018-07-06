@@ -1,12 +1,14 @@
 <!doctype html>
 <html lang="pt-br">
-  <head>
-    <!-- Meta tags Obrigatórias -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!-- Página criada por Felipe Barros e Gustavo Marques (GitHub: GustavoM7) -->
+<head>
+	<!-- Meta tags Obrigatórias -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 	<!--Icone da aba -->
 	<link rel="shortout icon" href="favicon.png" type="imagem/x-png">
+	<title>Home</title>
 
 	<!--Bootstrap CSS e javascript locais e biblio JQuery -->
 	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
@@ -16,14 +18,10 @@
 	<!--Framework de animações-->
 	<link href="css/animate.min.css" rel="stylesheet" type="text/css">	
 
-    <!-- Bootstrap CSS pelo servidor -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
-	<title>Home</title>
-	<style>
-	</style>
-	
+	<!-- Bootstrap CSS pelo servidor -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+
 	<script>
-	
 	//'hover' do rodapé
 	
 	function hoverfb() {
@@ -62,16 +60,20 @@
 	<!--Arquivo css otimizado e reorganizado (em desenvolvimento) -->		
 	<link href="cssfinal.css" rel="stylesheet" type="text/css">
 
-  </head>
-  <body>
+</head>
+<body>
 	<div class="fixed-top" max-width=100%>
-	<header id="cabecalho">
-		<input type="checkbox" id="bt_menu">
+	<header id="cabecalho">		
+		<input type="checkbox" id="bt_menu"> <!-- Botão para cascata de menu (modo mobile) -->
 		<label for="bt_menu">&#9776;</label>
+
 		<div id="Evento">
 			<img src="EventoIcon.png" width="210" height="50">
+			<!-- imagem/icone do evento -->
 		</div>
+
 		<nav id="menu">
+			<!-- navbar do menu -->
 			<ul>
 				<a href="home.html"><li id="local">Home</li></a>
 				<a href="local.html"><li>Local</li></a>
@@ -82,14 +84,16 @@
 	</header>
 	</div>
 	
-	<hgroup id="banner">
-		<div id="titulobanner">
+	<hgroup id="bannerhome">
+		<div class="titulobanner">
 			<h3>Evento Compreender</h3>
 			<h4><i>Empreendedorismo, Conhecimento e Criatividade</i></h4>
+			<!-- Banner de apresentação da página -->
 		</div>
 	</hgroup>
 	
-	<div id="decoracao1"></div>	<div id="decoracao2"></div>
+	<div id="decoracao1"></div>	<div id="decoracao2"></div> <!-- Decoração temática da página (tratada por css) -->
+
 	<div class="container">
 	<section id="corpo">
 		<div class="container">
@@ -101,9 +105,9 @@
 				<p>O evento iniciará ás 08:00 horas com o Workshop Brainstorming, voltado para quem já tem um empreendimento e quer criar/renovar seus produtos e serviços, além de criar uma comunicação mais encantadora para atrair seu público. Logo após, o Workshop de Desenvolvimento Empresarial, com dicas de inovação importantes para concepção de ideias, que podem complementar os contínuos processos criativos empresariais.</p>
 
 				<p>Na parte da tarde, terá início as palestras com empresários renomados (confira na página <a href="programacao.html">Programação</a>), com dicas de como ser empreendedor e inovador em um cenário não muito favorável, a palestra é um convite à reflexão permitindo ao participante compreender as dimensões e amplitude do empreendedorismo, estimulando-o a identificar seu próprio potencial, colocando-o em prática. Além disso, fazendo os jovens refletirem sobre a importância de se trabalhar em algo que você ama e acredita e como isso pode influenciar na construção de uma carreira brilhante.</p>
-				<!--Carousel Bootstrap -->
 			</div>
-			
+
+			<!--Carousel Bootstrap -->
 			<div class="col">
 				<h4> Galeria da 1ª Edição: </h4>
 				<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -170,7 +174,8 @@
 				</div>
 			<br>
 				<h4>Divulgação:</h4>
-				<img src="EventoDivug.jpeg" width=400px class="logotexto animated wow zoomIn fotopag">
+				<img src="EventoDivug.jpeg" width=400px class="logotexto animated wow zoomIn fotopag"> 
+				<!-- Imagem de divulgação do evento. -->
 			</div>
 		</div>
 		</div>
@@ -191,6 +196,7 @@
 				</div>
 				<div class="col-sm">
 					<aside id="links">
+					<!-- links para redes sociais -->
 					<h4>Social:</h4>
 					<a href="#" id="logo"><img src="LogoPeq.png"></a><br>Khnum<br>
 					
@@ -200,7 +206,7 @@
 					
 					<a href="https://www.facebook.com/" target="_blank"><img src="iconeinst.png" id="instagram" onmousemove="hoverinstagram()" onmouseout="normalizeinstagram()"></a>
 					
-					<a href="https://www.facebook.com/" target="_blank"><img src="iconeyt.png" id="youtube"onmousemove="hoveryt()" onmouseout="normalizeyt()"></a>
+					<a href="https://www.facebook.com/" target="_blank"><img src="iconeyt.png" id="youtube" onmousemove="hoveryt()" onmouseout="normalizeyt()"></a>
 					</aside>
 				</div>
 			</div>

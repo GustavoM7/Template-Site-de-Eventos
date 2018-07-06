@@ -1,338 +1,27 @@
 <!doctype html>
 <html lang="pt-br">
-  <head>
-    <!-- Meta tags Obrigatórias -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!-- Página criada por Felipe Barros e Gustavo Marques (GitHub: GustavoM7) -->
+<head>
+	<!-- Meta tags Obrigatórias -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 	<!--Icone da aba -->
 	<link rel="shortout icon" href="favicon.png" type="imagem/x-png">
-	
+	<title>Home</title>
+
 	<!--Bootstrap CSS e javascript locais e biblio JQuery -->
 	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
 	<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
-
-    <!--Framework de animações-->
+	
+	<!--Framework de animações-->
 	<link href="css/animate.min.css" rel="stylesheet" type="text/css">	
 
-    <!-- Bootstrap CSS pelo servidor -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
-	<title>Local</title>
-	<style>
-		body {
-			background-image: url("malhaquadriculada.jpg");
-			background-size: cover;
-			background-repeat: no-repeat;
-			background-attachment: fixed;
-			background-color: rgb(0,33,69);
-			font-family: "Aldrich";
-			src:url("Aldrich-Regular.ttf") format("truetype");
-			color: white;
-			overflow-x: hidden;
-		}
-		
-		@font-face {
-			font-family: "Aldrich";
-			src:url("Aldrich-Regular.ttf") format("truetype");
-		}
-		
-		/*atributos do menu miniatura*/
-		label[for="bt_menu"]{
-			background-color: rgb(235, 132, 47);
-			color: white;
-			text-align: center;
-			font-size: 20px;
-			cursor: pointer;
-			width: 30px;
-			height: 30px;
-			float: right;
-			margin-top: 20px;
-			margin-right: 10px;
-		
-		}
-		
-		#bt_menu{
-			display: none;
-		}
-		
-		label[for="bt_menu"]{
-			display: none;
-		}
-		
-		/*atributos de responsividade*/
-		@media(max-width: 800px){
-			label[for="bt_menu"]{
-				display: block;
-			}
-			input#bt_menu:checked ~ nav#menu{
-				margin-right: 12px;
-				margin-top: 2px;
-				position: relative;
-				clear: both;
-				visibility: visible;
-			}
-		
-			input#bt_menu:checked ~ nav#menu ul li{
-				box-shadow: 4px 2px rgba(0,0,0,.2);
-				border: 1px solid rgba(0,0,0,.2);
-				
-			}
-		
-			nav#menu{
-				position: relative;
-				margin-right: 12px;
-				transition: all .8s;
-				visibility: hidden;
-			}
-		
-			nav#menu ul li{
-				width: 100%;
-				margin: 0px;
-			}
+	<!-- Bootstrap CSS pelo servidor -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
 
-			body section#corpo{
-				margin: 4px;
-				text-align: center;
-			}
-			
-			body section#corpo div#fotos {
-			margin: 20px 0px 20px 0px;
-		}
-		
-		}
-		
-		nav#menu {
-			display: block;
-		}
-		
-		nav#menu ul {
-			list-style: none;
-			position: absolute;
-			top: 0px;
-			right: 10px;
-			float: left:
-			text-transform: uppercase;
-		}
-		
-		nav#menu li {
-			display: inline-block;
-			color: black;
-			background-color: white;
-			text-align: center;
-			padding: 10px;
-			height: 60px;
-			margin: 0px 10px 0px 0px;
-			transition: background-color 0.8s;
-		}
-		
-		nav#menu li#program {
-			background-color: rgb(0,33,69);
-			color: white;
-			position: relative;
-		}
-		
-		nav#menu li:hover {
-			color: rgb(235, 132, 47);
-		}
-		
-		/*Configurando botão diferenciado para programação*/
-		nav#menu li#program {
-			background-color: rgb(0,33,69);
-			color: white;
-			position: relative;
-		}
-
-		/*Configurando botão de marcação local*/
-		nav#menu li#local {
-			border-bottom: 6px rgb(235, 132, 47) solid;
-		}
-		
-		@keyframes bounce {
-			0%, 20%, 60%, 100% {
-				-webkit-transform: translateY(0);
-				transform: translateY(0);
-			}
-			40% {
-				-webkit-transform: translateY(-20px);
-				transform: translateY(-20px);
-			}
-			80% {
-				-webkit-transform: translateY(-10px);
-				transform: translateY(-10px);
-			}
-		}
-
-		nav#menu a {
-			text-decoration: none;
-			transition: 0.3s ease-in;
-		}
-		
-		div#Evento img {
-			margin-left: 20px;
-		}
-		
-		header#cabecalho {
-			display: block;
-			height: 60px;
-			color: rgb(17, 26, 23);
-			background-color: white;
-			margin: 0px 0px 0px 0px;
-			box-shadow: 4px 2px rgba(0,0,0,.2);
-		}
-		
-		hgroup#banner {
-			display: block;
-			background-color: rgba(224, 236, 243,.5);
-			padding: 50px;
-			margin: 60px 0px 0px 0px;
-			height: 400px;
-			text-shadow: 2px 2px rgb(17, 26, 23);
-			color: white;
-			text-align: center;
-			background: url("auditorio.jpg") no-repeat fixed;
-			background-size: cover;
-		}
-		
-		hgroup#banner div#titulobanner {
-			display: block;
-			margin-top: 100px;
-		}
-		
-		section#corpo {
-			display: block;
-			margin: 40px 40px 0px 40px;
-			padding: 20px;
-			background-color: rgba(255,255,255,.2);
-			text-align: justify;
-		}
-		
-		div#decoracao1 {
-			display: block;
-			position: absolute;
-			background: url("dec1.png") no-repeat fixed;
-			background-size: auto;
-			height: 400px;
-			width: 250px;
-		}
-		
-		footer {
-            display: block;
-            margin: 10px auto 0px auto;
-			padding-top: 20px;
-            background-color: white;
-            color: black;
-            font-size: 10pt;
-			text-align: center;
-            position: sticky;
-        }
-        
-        footer aside#links img {
-            padding: 6px;
-            transition: 1s ease-in;
-        }
-        
-		footer div#container div#col-sm aside#links img#face:hover {
-			box-shadow: 4px 2px rgba(0,0,0,.2);		
-            background-image: url("inconefbhover.png");
-        }
-        
-        div#copy {
-            display: block;
-            font-size: 8pt;
-			text-align: center;
-            margin-bottom: 0px;
-            margin-top: 0px;
-            clear: both;
-            background-color: black;
-			color: white;
-			padding-top: 10px;
-            height: 40px;
-			position: sticky;
-        }
-		
-		.tada {
-			-webkit-animation-delay: 3s;
-		}
-		
-		/* icone de loading */		
-		.pace {
-		  -webkit-pointer-events: none;
-		  pointer-events: none;
-
-		  -webkit-user-select: none;
-		  -moz-user-select: none;
-		  user-select: none;
-		}
-
-		.pace .pace-activity {
-		  display: block;
-		  position: fixed;
-		  z-index: 2000;
-		  top: 0;
-		  left: -300px;
-		  width: 300px;
-		  height: 300px;
-		  background: #eb7a55;
-		  -webkit-transition: -webkit-transform 0.3s;
-		  transition: transform 0.3s;
-		  -webkit-transform: translateX(100%) translateY(-150%) rotate(45deg);
-		  transform: translateX(100%) translateY(-125%) rotate(45deg);
-		  pointer-events: none;
-		}
-
-		.pace.pace-active .pace-activity {
-		  -webkit-transform: translateX(50%) translateY(-50%) rotate(315deg);
-		  transform: translateX(50%) translateY(-50%) rotate(315deg);
-		}
-
-		.pace .pace-activity::before,
-		.pace .pace-activity::after {
-			-moz-box-sizing: border-box;
-			box-sizing: border-box;
-			position: absolute;
-			bottom: 30px;
-			left: 50%;
-			display: block;
-			border: 5px solid #fff;
-			border-radius: 50%;
-			content: '';
-		}
-
-		.pace .pace-activity::before {
-			margin-left: -40px;
-			width: 80px;
-			height: 80px;
-			border-right-color: rgba(0, 0, 0, .2);
-			border-left-color: rgba(0, 0, 0, .2);
-			-webkit-animation: pace-theme-corner-indicator-spin 3s linear infinite;
-			animation: pace-theme-corner-indicator-spin 3s linear infinite;
-		}
-
-		.pace .pace-activity::after {
-			bottom: 50px;
-			margin-left: -20px;
-			width: 40px;
-			height: 40px;
-			border-top-color: rgba(0, 0, 0, .2);
-			border-bottom-color: rgba(0, 0, 0, .2);
-			-webkit-animation: pace-theme-corner-indicator-spin 1s linear infinite;
-			animation: pace-theme-corner-indicator-spin 1s linear infinite;
-		}
-
-		@-webkit-keyframes pace-theme-corner-indicator-spin {
-		  0% { -webkit-transform: rotate(0deg); }
-		  100% { -webkit-transform: rotate(359deg); }
-		}
-		@keyframes pace-theme-corner-indicator-spin {
-		  0% { transform: rotate(0deg); }
-		  100% { transform: rotate(359deg); }
-		}
-
-	</style>
-	
 	<script>
-	
 	//'hover' do rodapé
 	
 	function hoverfb() {
@@ -367,8 +56,12 @@
 		document.getElementById("youtube").src="iconeyt.png";	
 	}
 	</script>
-  </head>
-  <body>
+
+	<!--Arquivo css otimizado e reorganizado (em desenvolvimento) -->		
+	<link href="cssfinal.css" rel="stylesheet" type="text/css">
+
+</head>
+<body>
 	<div class="fixed-top">
 	<header id="cabecalho">
 		<input type="checkbox" id="bt_menu">
@@ -387,8 +80,8 @@
 	</header>
 	</div>
 	
-	<hgroup id="banner">
-		<div id="titulobanner">
+	<hgroup id="bannerlocal">
+		<div class="titulobanner">
 			<h3>Universidade Federal do Ceará</h3>
 			<h4><i>Auditório Reitor Ícaro de Souza Moreira</i></h4>
 		</div>
@@ -411,7 +104,8 @@
 	</section>
 	</div>	
 		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7962.598255348777!2d-38.577397050695524!3d-3.7448773389628376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c74bde94381ce9%3A0x824fed420b1ece1c!2sBL.+902+-+Dire%C3%A7%C3%A3o+Centro+de+Ci%C3%AAncias+%2F+Audit%C3%B3rio+Reitor+%C3%8Dcaro+de+Sousa+Moreira!5e0!3m2!1spt-BR!2sbr!4v1524322032782" width="100%" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
-		<footer>
+
+	<footer>
 		<div class="container">
 			<div class="row">
 				<div class="col-sm">
@@ -425,6 +119,7 @@
 				</div>
 				<div class="col-sm">
 					<aside id="links">
+					<!-- links para redes sociais -->
 					<h4>Social:</h4>
 					<a href="#" id="logo"><img src="LogoPeq.png"></a><br>Khnum<br>
 					
@@ -434,7 +129,7 @@
 					
 					<a href="https://www.facebook.com/" target="_blank"><img src="iconeinst.png" id="instagram" onmousemove="hoverinstagram()" onmouseout="normalizeinstagram()"></a>
 					
-					<a href="https://www.facebook.com/" target="_blank"><img src="iconeyt.png" id="youtube"onmousemove="hoveryt()" onmouseout="normalizeyt()"></a>
+					<a href="https://www.facebook.com/" target="_blank"><img src="iconeyt.png" id="youtube" onmousemove="hoveryt()" onmouseout="normalizeyt()"></a>
 					</aside>
 				</div>
 			</div>

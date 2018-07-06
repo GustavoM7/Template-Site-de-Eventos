@@ -1,3 +1,6 @@
+/*css para template de site de envento*/
+/*criada por Felipe Barros e Gustavo Marques (GitHub: GustavoM7)*/
+
 body {
 	background-image: url("malhaquadriculada.jpg");
 	background-size: cover;
@@ -14,7 +17,8 @@ a {
 	color: rgb(235,132,47);
 	text-decoration: none;
 }
-		
+
+/*fonte externa*/		
 @font-face {
 	font-family: Aldrich;
 	src: url('Aldrich-Regular.ttf') format("truetype");
@@ -87,9 +91,16 @@ label[for="bt_menu"]{
 	}
 		
 }
-		
+
+
+/*atributos da navbar do menu*/		
 nav#menu {
 	display: block;
+}
+
+nav#menu a {
+	text-decoration: none;
+	transition: 0.3s ease-in;
 }
 		
 nav#menu ul {
@@ -111,6 +122,15 @@ nav#menu li {
 	margin: 0px 10px 0px 0px;
 	transition: background-color 0.8s;
 }
+
+nav#menu li:hover {
+	color: rgb(235, 132, 47);		
+}
+		
+/*Configurando botão de marcação local*/
+nav#menu li#local {
+	border-bottom: 6px rgb(235, 132, 47) solid;
+}
 		
 /*Configurando botão diferenciado para programação*/
 nav#menu li#program {
@@ -118,22 +138,14 @@ nav#menu li#program {
 	color: white;
 	position: relative;
 }
-
-/*Configurando botão de marcação local*/
-nav#menu li#local {
-	border-bottom: 6px rgb(235, 132, 47) solid;
-}
-		
-nav#menu li:hover {
-	color: rgb(235, 132, 47);		
-}
 		
 nav#menu li#program:hover {
 	background-color: black;
 	color: rgb(235, 132, 47);
 	animation: bounce 1s;
 }
-		
+
+/*animação bouce*/		
 @keyframes bounce {
 	0%, 20%, 60%, 100% {
 		-webkit-transform: translateY(0);
@@ -149,15 +161,12 @@ nav#menu li#program:hover {
 	}
 }
 
-nav#menu a {
-	text-decoration: none;
-	transition: 0.3s ease-in;
-}
-	
+/*posicionando imagem/icone do evento*/	
 div#Evento img {
 	margin-left: 20px;
 }
-		
+
+/*propriedades do cabeçalho*/		
 header#cabecalho {
 	display: block;
 	height: 60px;
@@ -166,8 +175,9 @@ header#cabecalho {
 	margin: 0px 0px 0px 0px;
 	box-shadow: 4px 2px rgba(0,0,0,.2);
 }
-		
-hgroup#banner {
+
+/*propriedades do banner (espefico para cada página)*/		
+hgroup#bannerhome {
 	display: block;
 	background-color: rgba(224, 236, 243,.5);
 	padding: 50px;
@@ -179,12 +189,27 @@ hgroup#banner {
 	background: url("videohome.gif") no-repeat fixed;
 	background-size: cover;
 }
-		
-hgroup#banner div#titulobanner {
+
+hgroup#bannerlocal {
+	display: block;
+	background-color: rgba(224, 236, 243,.5);
+	padding: 50px;
+	margin: 60px 0px 0px 0px;
+	height: 400px;
+	text-shadow: 2px 2px rgb(17, 26, 23);
+	color: white;
+	text-align: center;
+	background: url("auditorio.jpg") no-repeat fixed;
+	background-size: cover;
+}
+
+/*propriedades do titulo do banner*/		
+.titulobanner {
 	display: block;
 	margin-top: 100px;
 }
-		
+
+/*propriedades do corpo de texto*/		
 section#corpo {
 	display: block;
 	margin: 40px;
@@ -192,7 +217,8 @@ section#corpo {
 	background-color: rgba(255,255,255,.2);
 	text-align: justify;
 }
-		
+
+/*propriedades da decoração temática da página*/		
 div#decoracao1 {
 	display: block;
 	position: absolute;
@@ -202,10 +228,12 @@ div#decoracao1 {
 	width: 250px;
 }
 
+/**/
 .fotopag {
 	box-shadow: 4px 4px 4px 2px rgba(0, 0, 0, 0.2);
 }
-	
+
+/*propriedades do rodapé*/	
 footer {
 	display: block;
 	margin: 10px auto 0px auto;
@@ -226,7 +254,7 @@ footer div#container div#col-sm aside#links img#face:hover {
 	box-shadow: 4px 2px rgba(0,0,0,.2);		
 	background-image: url("inconefbhover.png");
 }
-        
+
 div#copy {
 	display: block;
 	font-size: 8pt;
@@ -240,16 +268,18 @@ div#copy {
 	height: 40px;
 	position: sticky;
 }
-		
+
+/*configurações personalizadas do carrossel bootstrap*/		
 .carousel-inner {
 	text-shadow: 2px 2px rgb(17, 26, 23)
 }
-		
+
+/*configurações personalizadas para animação tada do animate*/		
 .tada {
 	-webkit-animation-delay: 3s;
 }
 		
-/* icone de loading */		
+/* propriedades da animação de carregamento de página */		
 .pace {
 	-webkit-pointer-events: none;
 	pointer-events: none;
