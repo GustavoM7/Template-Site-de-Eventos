@@ -2,7 +2,7 @@
 /*criada por Felipe Barros e Gustavo Marques (GitHub: GustavoM7)*/
 
 body {
-	background-image: url("malhaquadriculada.jpg");
+	background-image: url("imgs/malhaquadriculada.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
@@ -178,22 +178,22 @@ header#cabecalho {
 
 /*propriedades do banner (espefico para cada página)*/		
 hgroup#bannerhome {
-	background: url("fotopaginaprogramacao.jpg") no-repeat fixed;
+	background: url("imgs/fotopaginaprogramacao.jpg") no-repeat fixed;
 	background-size: cover;
 }
 
 hgroup#bannerlocal {
-	background: url("auditorio.jpg") no-repeat fixed;
+	background: url("imgs/auditorio.jpg") no-repeat fixed;
 	background-size: cover;
 }
 
 hgroup#bannerkhnum {
-	background: url("fotopaginakhnum.jpg") no-repeat fixed;
+	background: url("imgs/fotopaginakhnum.jpg") no-repeat fixed;
 	background-size: cover;
 }
 
 hgroup#bannerprogramacao {
-	background: url("fotopaginaprogramacao.jpg") no-repeat fixed;
+	background: url("imgs/fotopaginaprogramacao.jpg") no-repeat fixed;
 	background-size: cover;
 }
 
@@ -228,7 +228,7 @@ section#corpo {
 div#decoracao1 {
 	display: block;
 	position: absolute;
-	background: url("dec1.png") no-repeat fixed;
+	background: url("imgs/dec1.png") no-repeat fixed;
 	background-size: auto;
 	height: 400px;
 	width: 250px;
